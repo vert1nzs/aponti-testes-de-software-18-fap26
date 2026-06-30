@@ -1,5 +1,5 @@
 # APONTI - Formação em Testes de Software - Turma 18
-Bem-vindo!
+Olá, seja Bem-vindo!
 Este repositório foi criado para reunir materiais utilizados na Formação em Testes de Software,
 organizados em trilhas de aprendizagem.
 ## Objetivos
