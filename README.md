@@ -4,9 +4,9 @@ Bem-vindo!
 Este repositório reúne materiais utilizados na Formação em **Testes de Software**,
 organizados em trilhas de aprendizagem.
 ## 🎯Objetivos
-- Construir um **portfólio profissional**
+- **Construir um portfólio profissional**
 ---
-# Trilhas
+## 📚 Trilhas
 | Módulo | Conteúdo |
 |---------|----------|
 | 01 | Git e GitHub |
