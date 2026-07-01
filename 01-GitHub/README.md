@@ -15,7 +15,9 @@ Este documento demonstra a aplicação prática de formatação em Markdown para
 *   **Link para outro arquivo:** Veja o [README principal da raiz](../README.md).
 *   **Arquivo PDF da Atividade:** [Clique aqui para abrir o PDF da Atividade](./Atividade_README.pdf).
 *   **Imagem do Módulo:**  
-    ![Mascote GitHub](https://github.com)
+    
+    ![Mascote GitHub](https://githubusercontent.com)
+
 
 ---
 
@@ -91,9 +93,10 @@ Acompanhamento das tarefas solicitadas no PDF da atividade:
 ---
 
 ## 🥇 Exercício 7 – Badges do GitHub
-![Status](https://shields.io)
-![Linguagem](https://shields.io)
-![Licença](https://shields.io)
+
+* ![Static Badge](https://img.shields.io/badge/Status-Em_Andamento-orange)
+* ![Static Badge](https://img.shields.io/badge/Linguagem-Markdown-blue)
+* ![Static Badge](https://img.shields.io/badge/Licensa-MIT-green)
 
 ---
 
@@ -114,7 +117,7 @@ Use as âncoras abaixo para navegar de volta aos principais blocos:
 Aqui estão os 5 recursos adicionais do Markdown aplicados para o desafio:
 
 1.  **Texto Riscado:** ~~Este texto está ultrapassado e foi riscado.~~
-2.  **Texto Destacado:** Use a tag HTML para deixar um termo <mark>em evidência</mark>.
+2.  **Texto Destacado:** Use a tag HTML para deixar um termo <mark>em evolução</mark>.
 3.  **HTML dentro do Markdown:** Centralizando um texto usando tags HTML:
     <p align="center">Este texto foi centralizado usando código HTML!</p>
 
@@ -124,5 +127,6 @@ Aqui estão os 5 recursos adicionais do Markdown aplicados para o desafio:
     Você descobriu as tags details e summary funcionando!
     </details>
 
-5.  **Imagem Clicável:** Clique na imagem do ícone abaixo para abrir o site do GitHub:
+5.  **Imagem Clicável:** Clique na imagem do logotipo abaixo para abrir a página oficial do GitHub:
+
     [![Logo do GitHub](https://github.com)](https://github.com)
