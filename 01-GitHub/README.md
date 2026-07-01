@@ -10,7 +10,7 @@ Use as âncoras abaixo para navegar de volta aos principais blocos:
 *   [Ir para o Exercício 6 (Criando uma Tabela)](#-exercício-6--criando-uma-tabela)
 *   [Ir para o Exercício 7 (Badges do GitHub)](-#exercício-7--badges-do-github)
 *   [Ir para o Exercício 8 (Inserindo Citações)](#-exercício-8--inserindo-citações)
-*   [Ir para o Exercício 10 (Desafio Final)](-exercício-10--desfio-final)
+*   [Ir para o Exercício 10 (Desafio Final)](-exercício-10--desafio-final)
 
 ---
 
