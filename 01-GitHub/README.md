@@ -58,9 +58,22 @@ aponti-testes-de-software-18-fap26/
 ```
 
 ### Como Executar o Projeto
-1. Clone o repositório na sua máquina local.
-2. Abra o terminal na pasta raiz do projeto.
-3. Use o comando `git pull origin main` para atualizar os arquivos.
+Para clonar e atualizar este projeto na sua máquina local, abra o seu terminal (Git Bash) e siga os passos abaixo:
+
+1. **Clonar o repositório:**
+   ```bash
+   git clone https://github.com/vert1nzs/aponti-testes-de-software-18-fap26.git
+   ```
+
+2. **Entrar na pasta do projeto:**
+   ```bash
+   cd aponti-testes-de-software-18-fap26
+   ```
+
+3. **Garantir que os arquivos estão atualizados:**
+   ```bash
+   git pull origin main
+   ```
 
 ### Autor
 Desenvolvido por **Everthon Ronald**.
