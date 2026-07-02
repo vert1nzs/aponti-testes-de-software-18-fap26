@@ -26,8 +26,9 @@ Este documento demonstra a aplicação prática de formatação em Markdown para
 *   **Link para um site:** Acesse a [Documentação Oficial do Git](https://git-scm.com).
 *   **Link para outro arquivo:** Veja o [README principal da raiz](../README.md).
 *   **Arquivo PDF da Atividade:** [Clique aqui para abrir o PDF da Atividade](./Atividade_README.pdf).
-*   **Imagem do Módulo:**  
-      Mascote GitHub](https://githubusercontent.com)
+*   **Imagem da Logo do Aponti:**  
+
+![Steroid Cat](https://github.com/vert1nzs/aponti-testes-de-software-18-fap26/blob/8d4ed590d98e0b26228c307a63c78a484de81d35/images.png)
 
 
 ---
