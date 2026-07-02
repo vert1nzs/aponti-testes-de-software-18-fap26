@@ -15,7 +15,7 @@ Use as âncoras abaixo para navegar de volta aos principais blocos:
 ---
 
 ## 📌 Exercício 1 – Melhorando o Visual do README
-Este documento demonstra a aplicação prática de formatação em Markdown para criar documentações profissionais. 
+Este documento demonstra a prática de formatação em Markdown para criar documentações profissionais. 
 
 *   Exemplo de texto em **negrito** e em *itálico*.
 *   Uso de títulos menores (`##`) e divisores de linha (`---`).
@@ -36,10 +36,10 @@ Este documento demonstra a aplicação prática de formatação em Markdown para
 ## 📂 Exercício 3 – Organização do README
 
 ### Título do Projeto
-Formação APONTI - Qualidade e Testes de Software
+FAP 2026 - Aponti Testes de Software - Turma 18
 
 ### Objetivo
-Aprender e aplicar boas práticas de documentação técnica utilizando Markdown e versionamento com Git.
+Aprender e aplicar boas práticas de documentação profissional utilizando Markdown e versionamento com Git.
 
 ### Tecnologias Utilizadas
 Git, GitHub e Markdown.
@@ -47,9 +47,14 @@ Git, GitHub e Markdown.
 ### Estrutura das Pastas
 ```text
 aponti-testes-de-software-18-fap26/
+├── 📂 01-GitHub/
+     └── Atividade_README.pdf
+         └── README.md (Este arquivo)
+├── 📂 images
+     └── images.png
+         └── steroidtocat.png
 ├── README.md (Principal)
-└── 01-GitHub/
-    └── README.md (Este arquivo)
+
 ```
 
 ### Como Executar o Projeto
