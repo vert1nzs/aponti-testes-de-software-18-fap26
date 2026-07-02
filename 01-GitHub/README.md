@@ -5,7 +5,7 @@ Use as âncoras abaixo para navegar de volta aos principais blocos:
 *   [Ir para o Exercício 1 (Melhorando o visual do README)](#-exercício-1--melhorando-o-visual-do-readme)
 *   [Ir para o Exercício 2 (Inserindo Recursos no README)](#-exercício-2--inserindo-recursos-no-readme)
 *   [Ir para o Exercício 3 (Estrutura e Execução)](#-exercício-3--organização-do-readme)
-*   [Ir para o Exercício 4 (Blocos de Código)](#-exercício-4--blocos-de-códigos)
+*   [Ir para o Exercício 4 (Blocos de Código)](#-exercício-4--blocos-de-código)
 *   [Ir para o Exercício 5 (Checklist)](#-exercício-5--checklist-de-atividades)
 *   [Ir para o Exercício 6 (Criando uma Tabela)](#-exercício-6--criando-uma-tabela)
 *   [Ir para o Exercício 7 (Badges do GitHub)](#-exercício-7--badges-do-github)
