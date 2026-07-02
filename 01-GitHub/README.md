@@ -131,7 +131,7 @@ Acompanhamento das tarefas solicitadas no PDF da atividade:
 ---
 
 ## 💡 Exercício 8 – Inserindo Citações
-> "Programas devem ser escritos para pessoas lerem e apenas incidentalmente para máquinas executarem." — Harold Abelson
+> **"O talento vence jogos, mas o trabalho em equipe e a inteligência vencem campeonatos." — Michael Jordan**
 
 ---
 
