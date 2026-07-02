@@ -133,4 +133,4 @@ Aqui estão os 5 recursos adicionais do Markdown aplicados para o desafio:
 
 5.  **Imagem Clicável:** Clique na imagem do logotipo abaixo para abrir a página oficial do GitHub:
 
-    [![Logo do GitHub](https://github.com)](https://github.com)
+    [![SteroidCat Te levara ao site do GitHub!!](https://octodex.github.com/steroidtocat/)](https://github.com/)
