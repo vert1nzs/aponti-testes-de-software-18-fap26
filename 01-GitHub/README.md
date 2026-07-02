@@ -3,7 +3,7 @@
 ## 🧭 Exercício 9 – Links Internos (Índice de Navegação)
 Use as âncoras abaixo para navegar de volta aos principais blocos:
 *   [Ir para o Exercício 1 (Melhorando o visual do README)](#-exercício-1--melhorando-o-visual-do-readme)
-*   [Ir para o Exercício 2 (Inserindo Recursos no README)](#-exercicio-2--inserindo-recursos-no-readme)
+*   [Ir para o Exercício 2 (Inserindo Recursos no README)](#-exercício-2--inserindo-recursos-no-readme)
 *   [Ir para o Exercício 3 (Estrutura e Execução)](#-exercício-3--organização-do-readme)
 *   [Ir para o Exercício 4 (Blocos de Código)](#-exercício-4--blocos-de-codigos)
 *   [Ir para o Exercício 5 (Checklist)](#-exercício-5--checklist-de-atividades)
