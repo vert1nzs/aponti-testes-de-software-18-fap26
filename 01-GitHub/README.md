@@ -27,8 +27,7 @@ Este documento demonstra a aplicação prática de formatação em Markdown para
 *   **Link para outro arquivo:** Veja o [README principal da raiz](../README.md).
 *   **Arquivo PDF da Atividade:** [Clique aqui para abrir o PDF da Atividade](./Atividade_README.pdf).
 *   **Imagem do Módulo:**  
-    
-    ![Mascote GitHub](https://githubusercontent.com)
+      Mascote GitHub](https://githubusercontent.com)
 
 
 ---
@@ -69,16 +68,16 @@ Desenvolvido por **Everthon Ronald**.
 # Sincronizar o repositório local com a nuvem
 git pull origin main
 
-# Remover uma pasta do controle de versão sem deletar do PC
-git rm -r --cached nome-da-pasta
+# Clona um repositório remoto para o local atual
+git clone <url>
 ```
 
 ### Exemplo em outra linguagem (Python)
 ```python
-def saudar_aluno(nome):
-    print(f"Olá, {nome}! Bem-vindo ao curso de Testes de Software.")
-
-saudar_aluno("Everthon")
+nome = input("Digite seu nome: ")
+print(f"Olá, {nome}! Bem-vindo ao Python!")
+idade = int(input("Digite sua idade: "))
+print(f"você tem {idade} anos.")
 ```
 
 ---
