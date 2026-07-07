@@ -49,10 +49,16 @@ Git, GitHub e Markdown.
 aponti-testes-de-software-18-fap26/
 ├── 📂 01-GitHub/
      └── Atividade_README.pdf
-         └── README.md (Este arquivo)
+         README.md (Este arquivo)
+├── 📂 Modulo-1
+     └── 📂Teste-de-Software
+          └── 📂 Atividades-Aula-1
+               └── Exercicio-1.md
+                   Exercicio-2.md
+                   Exercicio-3.md
 ├── 📂 images
      └── images.png
-         └── steroidtocat.png
+         steroidtocat.png
 ├── README.md (Principal)
 
 ```
