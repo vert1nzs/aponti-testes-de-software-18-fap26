@@ -76,7 +76,12 @@ Para clonar e atualizar este projeto na sua máquina local, abra o seu terminal 
    cd aponti-testes-de-software-18-fap26
    ```
 
-3. **Garantir que os arquivos estão atualizados:**
+3. **Edição dos Arquivos:**
+   ```bash
+   Faça suas ediçôes pelo GitHub e ao terminar siga para o próximo passo
+   ```
+   
+4. **Garantir que os arquivos estão atualizados:**
    ```bash
    git pull origin main
    ```
