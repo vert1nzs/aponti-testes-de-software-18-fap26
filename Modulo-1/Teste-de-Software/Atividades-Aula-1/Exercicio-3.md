@@ -18,11 +18,11 @@ Abaixo está a comparação entre o modelo de testes tradicional (Cascata/Waterf
 
 No cenário atual de desenvolvimento de software, a área de Engenharia de Qualidade enfrenta desafios complexos que vão muito além da simples escrita de casos de teste. Em projetos reais, três grandes desafios se destacam pelo alto impacto que causam nas entregas:
 
-### 1. O Equilíbrio entre Velocidade de Entrega e Cobertura de Testes
+### 1 - O Equilíbrio entre Velocidade de Entrega e Cobertura de Testes
 Com a popularização de metodologias ágeis e deploys contínuos (múltiplas vezes ao dia), há uma pressão constante do negócio para lançar novas funcionalidades o mais rápido possível. O grande desafio do QA moderno é conseguir automatizar e testar os fluxos críticos na mesma velocidade em que o código é gerado, sem permitir que a pressa comprometa a estabilidade do sistema e resulte em bugs em produção.
 
-### 2. A Manutenção e Confiabilidade da Automação (Testes Flaky)
+### 2 - A Manutenção e Confiabilidade da Automação (Testes Flaky)
 Criar testes automatizados tornou-se um requisito básico, mas mantê-los saudáveis é um dos maiores gargalos dos times técnicos. Interfaces mudam frequentemente, e testes mal estruturados costumam falhar de forma intermitente sem que haja um bug real (os chamados *flaky tests*). Isso consome tempo precioso da equipe analisando falsos positivos e gera desconfiança sobre a eficácia da própria automação.
 
-### 3. Disseminação da Cultura de Qualidade (Quality Assistance)
+### 3 - Disseminação da Cultura de Qualidade (Quality Assistance)
 Mudar a mentalidade de que "qualidade é obrigação apenas do QA" ainda é uma barreira cultural em muitas empresas. O verdadeiro desafio moderno é fazer o papel de facilitador de qualidade (*Quality Assistance*), capacitando os próprios desenvolvedores a escreverem bons testes unitários e de integração, garantindo que o software nasça com qualidade desde a primeira linha de código escrita.
