@@ -115,11 +115,14 @@ Este documento apresenta a análise de qualidade da **Clínica Psi**, cobrindo o
 
 ### Exercício 6 — Classificação dos Testes
 
-1.  **Verificar se receitas − despesas retorna o saldo correto:** **Unitário.** Testa isoladamente a integridade de uma operação matemática interna do código.
-2.  **Verificar se uma receita salva aparece no relatório financeiro:** **Integração.** Avalia a comunicação e a passagem correta de dados entre o módulo de lançamentos e o módulo gerador de relatórios.
-3.  **Executar todo o fluxo entre cadastro, atendimento e pagamento:** **Sistema.** Um cenário de ponta a ponta (E2E) que simula o dia a dia completo do usuário através da interface do sistema.
-4.  **Confirmar com a direção da clínica se o relatório atende às necessidades:** **Aceitação.** Validação de negócio realizada diretamente com o cliente/usuário responsável para dar o aval de conformidade.
-5.  **Verificar isoladamente a validação de CPF:** **Unitário.** Valida uma única regra lógica de validação de dados dentro de uma função isolada do código.
+1. **Verificar se receitas − despesas retorna o saldo correto:** **Unitário.**
+2. **Verificar se uma receita salva aparece no relatório financeiro:** **Integração.**
+3. **Executar todo o fluxo entre cadastro, atendimento e pagamento:** **Sistema.**
+4. **Confirmar com a direção da clínica se o relatório atende às necessidades:** **Aceitação.**
+5. **Verificar isoladamente a validação de CPF:** **Unitário.**
+6. **Verificar se um reagendamento atualiza a agenda:** **Integração.**
+7. **Avaliar se apenas psicólogos podem visualizar prontuários:** **Sistema.**
+8. **Confirmar com a recepcionista se o processo de agendamento é adequado à rotina da clínica:** **Aceitação.**
 
 ---
 
@@ -152,3 +155,12 @@ Este documento apresenta a análise de qualidade da **Clínica Psi**, cobrindo o
 - [x] **O que verificar:** Resoluções de Tela Específicas | **Como:** Testar a visualização em resoluções de 360px, 768px e 1366px. | **Critério:** Sem quebras de textos, menus escondidos ou sobreposição de caixas. | **Risco:** Perda aparente de botões e comandos vitais de ação para telas menores. | **Prioridade:** Alta
 - [x] **O que verificar:** Exibição de caracteres especiais | **Como:** Cadastrar nomes contendo acentos e símbolos (ex: "Conceição"). | **Critério:** Gravação e exibição correta dos acentos em todas as telas e listagens. | **Risco:** Caracteres ilegíveis corrompendo a busca e os cadastros na plataforma. | **Prioridade:** Média
 - [x] **O que verificar:** Suporte a Impressão | **Como:** Acionar o comando de impressão do navegador na tela de relatório financeiro. | **Critério:** Geração de um PDF formatado de forma limpa, omitindo menus do site. | **Risco:** Relatórios impressos incompletos ou ilegíveis para auditoria física. | **Prioridade:** Média
+
+---
+
+## 8. Execução dos Testes, Evidências e Relatório de Defeitos (Entregas 9 e 10)
+
+Após testes na **Clínica Psi**, foi identificado os seguintes defeitos críticos:
+1. **Horários Duplicados:** Permite agendamentos sobrepostos (Alta gravidade).
+2. **Validação de Campos:** Falta feedback visual em campos obrigatórios vazios (Média gravidade).
+3. **Responsividade Mobile:** Layout quebrado em telas pequenas (Média gravidade).
