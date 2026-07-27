@@ -120,3 +120,35 @@ Este documento apresenta a análise de qualidade da **Clínica Psi**, cobrindo o
 3.  **Executar todo o fluxo entre cadastro, atendimento e pagamento:** **Sistema.** Um cenário de ponta a ponta (E2E) que simula o dia a dia completo do usuário através da interface do sistema.
 4.  **Confirmar com a direção da clínica se o relatório atende às necessidades:** **Aceitação.** Validação de negócio realizada diretamente com o cliente/usuário responsável para dar o aval de conformidade.
 5.  **Verificar isoladamente a validação de CPF:** **Unitário.** Valida uma única regra lógica de validação de dados dentro de uma função isolada do código.
+
+---
+
+## 7. Checklist com pelo menos 20 Testes Não Funcionais
+
+### Performance
+- [x] **O que verificar:** Tempo para abrir a agenda | **Como:** Medir com ferramentas de dev (Network) simulando mais de 1.000 agendamentos na base. | **Critério:** Abrir em até 2 segundos. | **Risco:** Atraso no atendimento físico/telefônico dos pacientes. | **Prioridade:** Alta
+- [x] **O que verificar:** Carregamento da Home | **Como:** Executar auditoria de carregamento via Google Lighthouse. | **Critério:** Página inicial utilizável em até 1.5 segundos. | **Risco:** Abandono do sistema devido à percepção de lentidão extrema. | **Prioridade:** Média
+- [x] **O que verificar:** Velocidade da pesquisa de pacientes | **Como:** Buscar nomes comuns em base volumosa de dados fictícios. | **Critério:** Resultados na tela em menos de 1 segundo. | **Risco:** Perda de produtividade dos atendentes na recepção. | **Prioridade:** Alta
+- [x] **O que verificar:** Tempo para salvar registros | **Como:** Monitorar requisições POST de cadastros e históricos longos. | **Critério:** Operação concluída em até 3 segundos. | **Risco:** Cliques duplos acidentais gerando duplicidade de dados. | **Prioridade:** Alta
+- [x] **O que verificar:** Consumo de memória RAM | **Como:** Monitorar o navegador após uso ininterrupto de simulação por 4 horas. | **Critério:** Consumo de RAM estável sem vazamentos (*memory leak*). | **Risco:** Travamento crônico do navegador, paralisando a recepção. | **Prioridade:** Média
+
+### Segurança
+- [x] **O que verificar:** Acesso a prontuários sem login | **Como:** Copiar a URL direta do módulo `/prontuarios` em uma aba anônima. | **Critério:** Redirecionamento automático para a tela de login. | **Risco:** Violação de sigilo e vazamento grave de dados de saúde (LGPD). | **Prioridade:** Alta
+- [x] **O que verificar:** Entrada de Scripts (XSS) | **Como:** Injetar código JavaScript `<script>` nos inputs de formulários. | **Critério:** Sistema sanitizar o texto e tratá-lo puramente como string comum. | **Risco:** Execução de códigos maliciosos nos navegadores roubando cookies. | **Prioridade:** Alta
+- [x] **O que verificar:** Dados expostos no LocalStorage | **Como:** Inspecionar a aba Application do navegador caçando chaves em texto limpo. | **Critério:** Nenhuma senha ou dado de saúde aberto gravado localmente. | **Risco:** Acesso a dados confidenciais por pessoas não autorizadas na mesma máquina. | **Prioridade:** Alta
+- [x] **O que verificar:** Exclusão indevida por perfil | **Como:** Tentar deletar pacientes logado como perfil de Recepcionista. | **Critério:** Comando bloqueado ou botão oculto na tela. | **Risco:** Perda ou manipulação indevida e maliciosa de dados históricos. | **Prioridade:** Alta
+- [x] **O que verificar:** Expiração de sessão inativa | **Como:** Manter a plataforma logada sem nenhuma interação física por 30 minutos. | **Critério:** Deslogar automaticamente exigindo novas credenciais. | **Risco:** Terceiros lerem ou alterarem agendas se o PC for deixado aberto. | **Prioridade:** Média
+
+### Usabilidade
+- [x] **O que verificar:** Indicação de campos obrigatórios | **Como:** Tentar salvar cadastros sem preencher informações essenciais. | **Critério:** Exibição de marcações em vermelho estruturadas e textos claros de erro. | **Risco:** Cadastro incorreto e incompleto de dados cruciais do negócio. | **Prioridade:** Alta
+- [x] **O que verificar:** Confirmação antes de exclusões | **Como:** Clicar no comando de deletar algum item da plataforma. | **Critério:** Exibir caixa de diálogo "Você tem certeza?" antes de apagar de vez. | **Risco:** Exclusão acidental de dados vitais por erro de clique do usuário. | **Prioridade:** Alta
+- [x] **O que verificar:** Mensagens de sucesso e erro | **Como:** Executar operações de salvamento bem e mal sucedidas. | **Critério:** Banners visuais verdes (sucesso) e vermelhos (erro) claros na tela. | **Risco:** Usuário ficar confuso sem saber se a tarefa foi aceita ou rejeitada. | **Prioridade:** Média
+- [x] **O que verificar:** Facilidade para retornar à tela anterior | **Como:** Entrar em fluxos profundos de agendamentos ou finanças. | **Critério:** Presença constante de botões claros de "Voltar" ou trilhas (Breadcrumbs). | **Risco:** Abandono de tarefas devido à perda de navegação e desorientação. | **Prioridade:** Média
+- [x] **O que verificar:** Comportamento com textos longos | **Como:** Digitar evoluções clínicas extensas no campo de texto de anamnese. | **Critério:** O layout expandir dinamicamente ou aplicar barras de rolagem sem quebrar. | **Risco:** Quebra estética do layout escondendo botões e travando a interface. | **Prioridade:** Baixa
+
+### Compatibilidade
+- [x] **O que verificar:** Suporte a Navegadores Modernos | **Como:** Executar as rotinas principais de agendamento no Chrome e no Firefox. | **Critério:** Comportamento idêntico, sem travamentos de scripts em nenhum deles. | **Risco:** Funções indisponíveis para parte dos usuários que usam browsers rivais. | **Prioridade:** Alta
+- [x] **O que verificar:** Funcionamento Responsivo | **Como:** Acessar o sistema simulando telas de Celular, Tablet e Computador. | **Critério:** Elementos gráficos se reorganizarem de forma fluida sem cortes nas laterais. | **Risco:** Tabelas cortadas e inacessíveis em dispositivos móveis. | **Prioridade:** Alta
+- [x] **O que verificar:** Resoluções de Tela Específicas | **Como:** Testar a visualização em resoluções de 360px, 768px e 1366px. | **Critério:** Sem quebras de textos, menus escondidos ou sobreposição de caixas. | **Risco:** Perda aparente de botões e comandos vitais de ação para telas menores. | **Prioridade:** Alta
+- [x] **O que verificar:** Exibição de caracteres especiais | **Como:** Cadastrar nomes contendo acentos e símbolos (ex: "Conceição"). | **Critério:** Gravação e exibição correta dos acentos em todas as telas e listagens. | **Risco:** Caracteres ilegíveis corrompendo a busca e os cadastros na plataforma. | **Prioridade:** Média
+- [x] **O que verificar:** Suporte a Impressão | **Como:** Acionar o comando de impressão do navegador na tela de relatório financeiro. | **Critério:** Geração de um PDF formatado de forma limpa, omitindo menus do site. | **Risco:** Relatórios impressos incompletos ou ilegíveis para auditoria física. | **Prioridade:** Média
