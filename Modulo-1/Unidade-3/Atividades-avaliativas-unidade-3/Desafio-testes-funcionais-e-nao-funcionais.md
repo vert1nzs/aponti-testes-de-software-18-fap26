@@ -84,6 +84,15 @@ Este documento apresenta a análise de qualidade da **Clínica Psi**, cobrindo o
 *   **Evidência:** `Mensagem de erro HTTP 403 (Forbidden) capturada no perfil sem permissão.`
 *   **Justificativa:** Valida o comportamento global da aplicação quanto aos níveis de autorização do usuário final via interface.
 
+#### Cenário E — Fluxo de Cancelamento de Consulta
+* **Pré-condições:** Consulta agendada com antecedência mínima de 24 horas.
+* **Dados utilizados:** ID da consulta: 998, Paciente: "Everthon Ronald".
+* **Passos:** 1. Localizar a consulta na agenda; 2. Selecionar a opção "Cancelar"; 3. Confirmar a exclusão.
+* **Resultado esperado:** A consulta deve ser removida da grade e o horário liberado para novos agendamentos.
+* **Resultado obtido:** O horário foi limpo na interface e constou novamente como vago.
+* **Situação:** Aprovado
+* **Evidência:** Status do agendamento alterado para "Livre" na listagem gráfica.
+* **Justificativa:** É teste de sistema pois avalia o fluxo funcional completo de exclusão de registros por meio da interface web com o usuário.
 ---
 
 ### Exercício 5 — Testes de Aceitação
@@ -113,17 +122,16 @@ Este documento apresenta a análise de qualidade da **Clínica Psi**, cobrindo o
 
 ---
 
-### Exercício 6 — Classificação dos Testes
+### Exercício 6 — Classificação e Justificativa dos Testes
 
-1. **Verificar se receitas − despesas retorna o saldo correto:** **Unitário.**
-2. **Verificar se uma receita salva aparece no relatório financeiro:** **Integração.**
-3. **Executar todo o fluxo entre cadastro, atendimento e pagamento:** **Sistema.**
-4. **Confirmar com a direção da clínica se o relatório atende às necessidades:** **Aceitação.**
-5. **Verificar isoladamente a validação de CPF:** **Unitário.**
-6. **Verificar se um reagendamento atualiza a agenda:** **Integração.**
-7. **Avaliar se apenas psicólogos podem visualizar prontuários:** **Sistema.**
-8. **Confirmar com a recepcionista se o processo de agendamento é adequado à rotina da clínica:** **Aceitação.**
-
+1.  **Cálculo de saldo:** **Unitário.** Testa função matemática isolada.
+2.  **Relatório financeiro:** **Integração.** Testa a troca de dados entre módulos.
+3.  **Fluxo de atendimento:** **Sistema.** Avalia fluxo ponta a ponta (E2E).
+4.  **Validação administrativa:** **Aceitação.** Valida regras com o cliente.
+5.  **Validação de CPF:** **Unitário.** Testa lógica individual.
+6.  **Atualização de agenda:** **Integração.** Verifica sincronização entre componentes.
+7.  **Segurança de prontuários:** **Sistema.** Testa regras globais na interface.
+8.  **Fluxo de agendamento:** **Aceitação.** Valida aderência operacional com o usuário.
 ---
 
 ## 7. Checklist com pelo menos 20 Testes Não Funcionais
