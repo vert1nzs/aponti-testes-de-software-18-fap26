@@ -65,7 +65,6 @@ Este documento apresenta o mapeamento de fluxos, a escrita de casos de teste de 
 ---
 
 ## Etapa 3 - Testes de Aceitação
-*Foco do negócio: Verificar a entrega de valor real e as expectativas do cliente final.*
 
 ### TA01: Conferência Prática do Saldo para Tomada de Decisão
 *   **Pré-condições:** Cliente possui R$ 250,00 reais em conta corrente.
@@ -113,8 +112,7 @@ Este documento apresenta o mapeamento de fluxos, a escrita de casos de teste de 
 
 ---
 
-## Etapa 5 - Revisão por Pares (Template)
-*Espaço reservado para documentar a análise das atividades dos colegas de classe conforme os critérios de Clareza, Estrutura e Coerência.*
+## Etapa 5 - Revisão por Pares
 
 *   **Projeto Revisado:** [Nome do Aluno / Link do Repositório]
 *   **Análise de Clareza:** [Escrever se os passos do colega foram fáceis de entender]
