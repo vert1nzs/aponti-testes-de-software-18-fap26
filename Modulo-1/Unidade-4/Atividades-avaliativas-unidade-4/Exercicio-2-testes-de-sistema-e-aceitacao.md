@@ -1,4 +1,4 @@
-# Atividade Avaliativa - Análise e Escrita de Testes: Sistema Bancário
+# Atividade Avaliativa - Testes de Sistema e de Aceitação
 
 Este documento apresenta o mapeamento de fluxos, a escrita de casos de teste de Sistema e de Aceitação, e a devida justificativa técnica para o cenário de um sistema bancário de consulta de saldo.
 
