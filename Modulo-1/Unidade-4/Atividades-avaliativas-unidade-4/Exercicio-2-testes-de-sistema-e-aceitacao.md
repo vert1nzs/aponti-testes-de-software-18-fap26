@@ -114,7 +114,4 @@ Este documento apresenta o mapeamento de fluxos, a escrita de casos de teste de 
 
 ## Etapa 5 - Revisão por Pares
 
-*   **Projeto Revisado:** [Nome do Aluno / Link do Repositório]
-*   **Análise de Clareza:** [Escrever se os passos do colega foram fáceis de entender]
-*   **Análise de Estrutura:** [Verificar se continha ID, Título, Passos e Resultados]
-*   **Análise de Coerência:** [Indicar se o colega soube separar o que era técnico (Sistema) do que era valor de negócio (Aceitação)]
+*   **Professor só ficou faltando, a revisão por pares. Não consegui falar com outro aluno para fazer essa revisão.**
